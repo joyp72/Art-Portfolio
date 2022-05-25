@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Heebo;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(49, 129, 126);
+}
+
+.header {
+    position: fixed;
+    left: 4%;
+    right: 4%;
+    top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.header-left a {
+    height: 50px;
+}
+
+.header-left-logo-button {
+    /* background: none; */
+    border-style: none;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.header-left-logo-button img {
+    height: 100%;
+    border-radius: 25px;
+}
+
+.header-left-name-button {
+    border-style: none;
+    background: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right-bar-button {
+    background: none;
+    border-style: none;
+    height: 50px;
+}
+
+.header-right-bar-button img {
+    height: 100%;
+}
+
+.top {
+    background-image: url('images/tree-background-1920.jpg');
+    background-position-x: 10%;
+    /* background-position-y: 30%; */
+    background-size: 420%;
+    height: 128vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url('images/tree-background-1920.jpg');
+    background-size: cover;
+    height: 120vh;
+} */
+
+.top-box {
+    position: absolute;
+    bottom: 29%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-box-title {
+    font-size: 4rem;
+    font-weight: 700;
+    width: 70%;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.top-box-logo-container {
+    margin-top: 2rem;
+    height: 60px;
+}
+
+.top-box-logo-container img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.top-box-name-container {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.top-box2 {
+    position: absolute;
+    bottom: 3%;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-align: center;
+    width: 70%;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 2rem;
+    margin-top: 1rem;
+}
+
+.mid-box1-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-box1-1 :nth-child(1) {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    width: 80%;
+}
+
+.mid-box1-1 :nth-child(2) {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    color: rgb(220, 220, 220);
+    margin-top: 0.8rem;
+    width: 55%;
+}
+
+.mid-painting-container {
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-painting-container img {
+    height: 100%;
+    box-shadow: 0.4rem 0.4rem 1rem black;
+}
+
+.mid-painting-1 {
+    height: 15rem;
+    z-index: 2;
+    margin-right: 8rem;
+}
+
+.mid-painting-2 {
+    height: 15rem;
+    z-index: 0;
+    margin-top: -13rem;
+    margin-left: 8rem;
+}
+
+.mid-painting-3 {
+    height: 10rem;
+    z-index: 1;
+    margin-top: -3rem;
+}
+
+.mid-button {
+    position: absolute;
+    top: 35%;
+    z-index: 5;
+}
+
+.mid-button button {
+    height: 100%;
+    border-style: none;
+    background-color: white;
+    border-radius: 10%;
+    padding: 0 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(49, 129, 126);
+    box-shadow: 0.4rem 0.4rem 1rem black;
+}
