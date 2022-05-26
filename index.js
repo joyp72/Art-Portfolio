@@ -3,6 +3,10 @@ let topMid = document.getElementById("top-mid");
 let leftIcon = document.getElementById("header-left-logo-button");
 let leftName = document.getElementById("header-left-name-button");
 
+let midPainting1 = document.getElementById("mid-painting-1");
+let midPainting2 = document.getElementById("mid-painting-2");
+let midPainting3 = document.getElementById("mid-painting-3");
+
 leftIcon.onmouseover = fadeLeftButtons;
 leftIcon.onmouseout = unFadeLeftButtons;
 
@@ -15,8 +19,46 @@ window.addEventListener("scroll", function () {
     offset = this.window.scrollY * 0.01;
     // console.log(offset);
     adjustHeader();
-
+    adjustPainting1();
+    adjustPainting2();
+    adjustPainting3();
 });
+
+function adjustPainting1() {
+    if (offset > 6) {
+        let style = getComputedStyle(midPainting1);
+        let cur = style.top;
+        cur = cur.slice(0, 2);
+        cur = parseInt(cur);
+        cur = cur - ((offset * 10) - 60) / 2;
+        midPainting1.style.marginTop = cur + "px";
+        // console.log(cur);
+    }
+}
+
+function adjustPainting2() {
+    if (offset > 6) {
+        let style = getComputedStyle(midPainting2);
+        let cur = style.top;
+        cur = cur.slice(0, 2);
+        cur = parseInt(cur);
+        cur = cur - ((offset * 10) - 60) * 2;
+        midPainting2.style.marginTop = cur + "px";
+        // console.log(cur);
+    }
+}
+
+function adjustPainting3() {
+    if (offset > 6) {
+        let style = getComputedStyle(midPainting3);
+        let cur = style.top;
+        cur = cur.slice(0, 2);
+        cur = parseInt(cur);
+        cur = cur - ((offset * 10) - 60);
+        midPainting3.style.marginTop = cur + "px";
+        // console.log(cur);
+    }
+}
 
 function fadeLeftButtons() {
     leftIcon.style.opacity = "0.7";
