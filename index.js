@@ -7,6 +7,9 @@ let midPainting1 = document.getElementById("mid-painting-1");
 let midPainting2 = document.getElementById("mid-painting-2");
 let midPainting3 = document.getElementById("mid-painting-3");
 
+let barButton = document.getElementById("header-right-bar-button");
+let sidebar = document.getElementById("sidebar");
+
 leftIcon.onmouseover = fadeLeftButtons;
 leftIcon.onmouseout = unFadeLeftButtons;
 
@@ -14,6 +17,7 @@ leftName.onmouseover = fadeLeftButtons;
 leftName.onmouseout = unFadeLeftButtons;
 
 let offset = 0;
+let sidebarToggle = 0;
 
 window.addEventListener("scroll", function () {
     offset = this.window.scrollY * 0.01;
@@ -57,6 +61,18 @@ function adjustPainting3() {
         cur = cur - ((offset * 10) - 60);
         midPainting3.style.marginTop = cur + "px";
         // console.log(cur);
+    }
+}
+
+function adjustSidebar() {
+    if (sidebarToggle == 0) {
+        barButton.style.transform = "rotate(-90deg)"
+        sidebar.style.transform = "translate(-230px)";
+        sidebarToggle = 1;
+    } else {
+        barButton.style.transform = "rotate(0deg)"
+        sidebar.style.transform = "translate(0px)";
+        sidebarToggle = 0;
     }
 }
 
