@@ -36,11 +36,15 @@
 
             <div class="sidebar-bottom">
                 <div>
-                    About
+                    <button onclick="scrollToFooter();">
+                        About
+                    </button>
                 </div>
 
                 <div>
-                    Socials
+                    <button onclick="scrollToFooter();">
+                        Socials
+                    </button>
                 </div>
             </div>
         </div>
@@ -63,8 +67,9 @@
             </div>
 
             <div class="header-right">
-                <button id="header-right-bar-button" class="header-right-bar-button" onclick="adjustSidebar();">
-                    <img src="images/right-bar-icon.png" alt="">
+                <button id="header-right-bar-button" class="header-right-bar-button" onclick="adjustSidebar();
+                ">
+                    <img src=" images/right-bar-icon.png" alt="">
                 </button>
             </div>
         </div>
@@ -83,14 +88,14 @@
             </div>
         </div>
 
-        <div class="top-box2">
+        <div id="top-box2" class="top-box2">
             Check out my various paintings!
         </div>
     </div>
 
     <div class="middle">
         <div class="mid-box1">
-            <div class="mid-box1-1">
+            <div id="minibox-1" class="mid-box1-1">
                 <div>
                     Vibrant Color Patterns
                 </div>
@@ -100,7 +105,7 @@
                 </div>
             </div>
 
-            <div class="mid-box1-1">
+            <div id="minibox-2" class="mid-box1-2">
                 <div>
                     Created With Care and Love
                 </div>
@@ -110,7 +115,7 @@
                 </div>
             </div>
 
-            <div class="mid-box1-1">
+            <div id="minibox-3" class="mid-box1-3">
                 <div>
                     Diverse Themes and Beautiful Designs
                 </div>
@@ -142,9 +147,19 @@
                 View Library
             </button>
         </div>
+
+        <div class="mid-box2">
+            <div class="mid-box2-content">
+                <img src="/images/laptop.png" alt="">
+            </div>
+
+            <div class="mid-box2-title">
+                Check it out on a bigger screen!
+            </div>
+        </div>
     </div>
 
-    <div class="footer">
+    <div id="footer" class="footer">
         <div class="footer-profile">
             <div class="footer-profile-title">
                 Website by:
