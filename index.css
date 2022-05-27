@@ -41,6 +41,7 @@ button:hover {
     position: fixed;
     display: flex;
     flex-direction: column;
+    height: 0;
     right: -235px;
     transition: transform 0.15s ease-in-out;
     padding-left: 5%;
