@@ -52,7 +52,7 @@
 }
 
 .footer-socials-title {
-    color: rgb(237, 188, 63)
+    color: rgb(237, 188, 63);
 }
 
 .footer-socials button {
@@ -61,4 +61,52 @@
     font-size: 0.8rem;
     line-height: 0.8rem;
     color: rgbrgb(225, 225, 225);
+}
+
+/* Samsung Galaxy S20 Ultra */
+@media screen and (min-width: 400px) {
+    .footer-profile-title {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+
+    .footer-profile-bottom :nth-child(1) {
+        font-size: 4.2rem;
+    }
+
+    .footer-profile-bottom :nth-child(2) {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .footer-socials button {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+}
+
+@media screen and (min-width: 820px) {
+
+    .footer-profile-title {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+    }
+
+    .footer-profile-bottom :nth-child(1) {
+        font-size: 4.4rem;
+    }
+
+    .footer-profile-bottom :nth-child(2) {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+
+    .footer-socials-title {
+        font-size: 1.3rem;
+    }
+
+    .footer-socials button {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
 }

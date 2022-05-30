@@ -81,12 +81,8 @@
     column-gap: 0.5rem;
 }
 
-.header-left a {
-    height: 50px;
-}
-
 .header-left-logo-button {
-    /* background: none; */
+    background: none;
     border-style: none;
     height: 50px;
     border-radius: 25px;
@@ -166,4 +162,104 @@
     transition: transform 0.15s ease-out, opacity 0.15s ease-out;
     opacity: 0;
     transform: translate(0, 10px);
+}
+
+/* Samsung Galaxy S20 Ultra */
+@media screen and (min-width: 400px) {
+    .top {
+        background-size: 440%;
+        background-position-x: 12%;
+        /* background-position-y: 30%; */
+    }
+
+    .sidebar-top {
+        font-size: 2.2rem;
+    }
+
+    .sidebar-bottom button {
+        font-size: 1.2rem;
+    }
+
+    .header-left-name-button {
+        font-size: 1.2rem;
+    }
+
+    .top-box-title {
+        font-size: 4.2rem;
+        line-height: 4.2rem;
+    }
+
+    .top-box-name-container {
+        font-size: 1.5rem;
+    }
+
+    .top-box2 {
+        font-size: 2.2rem;
+        line-height: 2.2rem;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .sidebar {
+        right: -455px;
+    }
+
+    .top-mid {
+        display: none;
+    }
+
+    .top {
+        background-size: 300%;
+        background-position-x: 50%;
+        background-position-y: 60%;
+    }
+
+    .sidebar-top {
+        font-size: 2.4rem;
+    }
+
+    .sidebar-bottom {
+        row-gap: 0.7rem;
+
+    }
+
+    .sidebar-bottom button {
+        font-size: 1.4rem;
+    }
+
+    .header-left-logo-button {
+        height: 60px;
+        border-radius: 30px;
+    }
+
+    .header-left-logo-button img {
+        border-radius: 30px;
+    }
+
+    .header-left-name-button {
+        font-size: 1.4rem;
+    }
+
+    .header-right-bar-button {
+        height: 60px;
+    }
+
+    .top-box-title {
+        font-size: 4.4rem;
+        line-height: 4.4rem;
+    }
+
+    .top-box-logo-container {
+        margin-top: 2rem;
+        height: 80px;
+    }
+
+    .top-box-name-container {
+        font-size: 1.7rem;
+    }
+
+    .top-box2 {
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+    }
 }

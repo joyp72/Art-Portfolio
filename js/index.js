@@ -94,7 +94,11 @@ function adjustSidebar() {
     if (sidebarToggle == 0) {
         sidebar.style.height = "100%"
         barButton.style.transform = "rotate(-90deg)"
-        sidebar.style.transform = "translate(-230px)";
+        if (visualViewport.width <= 450) {
+            sidebar.style.transform = "translate(-230px)";
+        } else if (visualViewport.width <= 820) {
+            sidebar.style.transform = "translate(-450px)";
+        }
         sidebarToggle = 1;
     } else {
         barButton.style.transform = "rotate(0deg)"
@@ -128,5 +132,8 @@ function scrollToFooter() {
     footer.scrollIntoView();
     barButton.style.transform = "rotate(0deg)"
     sidebar.style.transform = "translate(0px)";
+    setTimeout(() => {
+        sidebar.style.height = "0";
+    }, 150);
     sidebarToggle = 0;
 }

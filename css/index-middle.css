@@ -174,3 +174,128 @@
     font-size: 1.5rem;
     font-family: Heebo;
 }
+
+/* Samsung Galaxy S20 Ultra */
+@media screen and (min-width: 400px) {
+    .mid-box1-1 :nth-child(1) {
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+    }
+
+    .mid-box1-1 :nth-child(2) {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .mid-box1-2 :nth-child(1) {
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+    }
+
+    .mid-box1-2 :nth-child(2) {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .mid-box1-3 :nth-child(1) {
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+    }
+
+    .mid-box1-3 :nth-child(2) {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .mid-button button {
+        padding: 0.5rem 1rem;
+        font-size: 2.2rem;
+        line-height: 2.2rem;
+    }
+
+    .mid-box2-title {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (min-width: 820px) {
+
+    .mid-box1 {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .mid-box1-1,
+    .mid-box1-2,
+    .mid-box1-3 {
+        width: 16rem;
+    }
+
+    .mid-box1-1 :nth-child(1) {
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+    }
+
+    .mid-box1-1 :nth-child(2) {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .mid-box1-2 :nth-child(1) {
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+    }
+
+    .mid-box1-2 :nth-child(2) {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .mid-box1-3 :nth-child(1) {
+        width: 16rem;
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+    }
+
+    .mid-box1-3 :nth-child(2) {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .mid-painting-container {
+        position: relative;
+        margin-top: 4rem;
+        height: 34rem;
+    }
+
+    .mid-painting-1 {
+        height: 20rem;
+        left: 10rem;
+        top: 10px;
+    }
+
+    .mid-painting-2 {
+        height: 20rem;
+        right: 10rem;
+        top: 80px;
+    }
+
+    .mid-painting-3 {
+        height: 17rem;
+        top: 270px;
+    }
+
+    .mid-button {
+        top: 45%;
+    }
+
+    .mid-button button {
+        padding: 0.5rem 1rem;
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+    }
+
+    .mid-box2 {
+        display: none;
+    }
+}
