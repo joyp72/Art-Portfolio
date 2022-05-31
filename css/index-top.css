@@ -165,7 +165,7 @@
 }
 
 /* Samsung Galaxy S20 Ultra */
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 412px) {
     .top {
         background-size: 440%;
         background-position-x: 12%;
@@ -199,13 +199,53 @@
     }
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 540px) {
+
     .sidebar {
-        right: -455px;
+        right: -300px;
+        width: 40%;
     }
 
-    .top-mid {
-        display: none;
+    .top {
+        background-size: 280%;
+        background-position-x: 10%;
+        /* background-position-y: 30%; */
+    }
+
+    .sidebar-top {
+        font-size: 2.2rem;
+    }
+
+    .sidebar-bottom button {
+        font-size: 1.2rem;
+    }
+
+    .header-left-name-button {
+        font-size: 1.2rem;
+    }
+
+    .top-box {
+        bottom: 30%;
+    }
+
+    .top-box-title {
+        font-size: 4.2rem;
+        line-height: 4.2rem;
+    }
+
+    .top-box-name-container {
+        font-size: 1.5rem;
+    }
+
+    .top-box2 {
+        font-size: 2.2rem;
+        line-height: 2.2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sidebar {
+        right: -455px;
     }
 
     .top {
@@ -261,5 +301,40 @@
     .top-box2 {
         font-size: 2.4rem;
         line-height: 2.4rem;
+    }
+}
+
+@media screen and (min-width: 820px) {
+
+    .top-mid {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 912px) {
+
+    .top-mid {
+        display: none;
+    }
+
+    .sidebar {
+        width: 30%;
+    }
+
+    .top-box2 {
+        font-size: 2.6rem;
+        line-height: 2.6rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sidebar {
+        width: 20%;
+        right: -270px;
+    }
+
+    .top-box2 {
+        font-size: 2.6rem;
+        line-height: 2.6rem;
     }
 }

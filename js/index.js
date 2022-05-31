@@ -96,12 +96,16 @@ function adjustSidebar() {
         barButton.style.transform = "rotate(-90deg)"
         if (visualViewport.width <= 450) {
             sidebar.style.transform = "translate(-230px)";
-        } else if (visualViewport.width <= 820) {
+        } else if (visualViewport.width <= 540) {
+            sidebar.style.transform = "translate(-300px)";
+        } else if (visualViewport.width <= 912) {
             sidebar.style.transform = "translate(-450px)";
+        } else if (visualViewport.width <= 1024) {
+            sidebar.style.transform = "translate(-270px)";
         }
         sidebarToggle = 1;
     } else {
-        barButton.style.transform = "rotate(0deg)"
+        barButton.style.transform = "rotate(0deg)";
         sidebar.style.transform = "translate(0px)";
         setTimeout(() => {
             sidebar.style.height = "0";
@@ -121,7 +125,9 @@ function unFadeLeftButtons() {
 }
 
 function adjustHeader() {
-    if (offset > 8) {
+    if (visualViewport.width < 760 && offset > 8) {
+        topMid.style.opacity = "1";
+    } else if (offset > 11) {
         topMid.style.opacity = "1";
     } else {
         topMid.style.opacity = "0";
