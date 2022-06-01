@@ -1,13 +1,35 @@
 .top {
-    background-image: url('../images/tree-background-1920.jpg');
-    background-position-x: 10%;
-    /* background-position-y: 30%; */
+    background-image: url("../images/tree-background-1920jpg.jpg");
     background-size: 420%;
-    height: 128vh;
+    background-position-x: 12%;
+    background-position-y: 80%;
+    height: 120vh;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.top-background {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: -2%;
+    height: 30%;
+    width: 100%;
+}
+
+.top-background-blur {
+    background-color: rgb(49, 129, 126);
+    -webkit-mask-image: linear-gradient(to top, black, transparent);
+    mask-image: linear-gradient(to top, black, transparent);
+    height: 100%;
+}
+
+.top-background-solid {
+    background-color: rgb(49, 129, 126);
+    height: 10%;
 }
 
 .top-mid {
@@ -30,8 +52,8 @@
     display: flex;
     flex-direction: column;
     height: 0;
-    right: -235px;
-    transition: transform 0.15s ease-in-out;
+    right: -100%;
+    transition: right 0.15s ease-in-out;
     padding-left: 5%;
     padding-right: 5%;
     top: 0;
@@ -166,11 +188,6 @@
 
 /* Samsung Galaxy S20 Ultra */
 @media screen and (min-width: 412px) {
-    .top {
-        background-size: 440%;
-        background-position-x: 12%;
-        /* background-position-y: 30%; */
-    }
 
     .sidebar-top {
         font-size: 2.2rem;
@@ -196,20 +213,21 @@
     .top-box2 {
         font-size: 2.2rem;
         line-height: 2.2rem;
+        bottom: 5%;
     }
 }
 
+/* Surface Duo */
 @media screen and (min-width: 540px) {
 
     .sidebar {
-        right: -300px;
-        width: 40%;
+        width: 30%;
     }
 
     .top {
-        background-size: 280%;
-        background-position-x: 10%;
-        /* background-position-y: 30%; */
+        background-size: 300%;
+        background-position-x: 3%;
+        background-position-y: 30%;
     }
 
     .sidebar-top {
@@ -243,15 +261,16 @@
     }
 }
 
+/* iPad Mini */
 @media screen and (min-width: 768px) {
-    .sidebar {
-        right: -455px;
-    }
 
     .top {
-        background-size: 300%;
-        background-position-x: 50%;
-        background-position-y: 60%;
+        background-position-x: 6%;
+        background-position-y: 70%;
+    }
+
+    .sidebar {
+        width: 30%;
     }
 
     .sidebar-top {
@@ -301,16 +320,28 @@
     .top-box2 {
         font-size: 2.4rem;
         line-height: 2.4rem;
+        width: 100%;
     }
 }
 
+/* iPad Air */
 @media screen and (min-width: 820px) {
+
+    .top {
+        background-position-x: 47%;
+        background-position-y: 90%;
+    }
+
+    .sidebar {
+        width: 30%;
+    }
 
     .top-mid {
         display: none;
     }
 }
 
+/* Surface Pro 7 */
 @media screen and (min-width: 912px) {
 
     .top-mid {
@@ -327,14 +358,59 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .sidebar {
-        width: 20%;
-        right: -270px;
+/* Nest Hub */
+@media screen and (min-width: 1024px) and (min-height: 600px) {
+
+    .top {
+        background-size: 150%;
+        background-position-x: 43%;
+        background-position-y: 85%;
     }
 
-    .top-box2 {
-        font-size: 2.6rem;
-        line-height: 2.6rem;
+    .sidebar {
+        width: 20%;
+    }
+
+    .top-mid {
+        display: flex;
+    }
+}
+
+/* iPad Pro */
+@media screen and (min-width: 1024px) and (min-height: 1024px) {
+    .top {
+        background-size: 250%;
+        background-position-x: 47%;
+        background-position-y: 90%;
+    }
+
+    .sidebar {
+        width: 20%;
+    }
+
+    .top-mid {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .top {
+        background-size: 110%;
+        background-position-x: 25%;
+        /* background-position-y: 20%; */
+    }
+
+    .sidebar {
+        width: 20%;
+    }
+
+    .header {
+        position: fixed;
+        left: 1%;
+        right: 1%;
+    }
+
+    .top-mid {
+        display: none;
     }
 }

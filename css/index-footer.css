@@ -110,3 +110,33 @@
         line-height: 1.2rem;
     }
 }
+
+@media screen and (min-width: 1024px) {
+
+    .footer-profile-title {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+    }
+
+    .footer-profile-bottom :nth-child(1) {
+        font-size: 4.8rem;
+    }
+
+    .footer-profile-bottom :nth-child(2) {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+    }
+
+    .footer-socials {
+        row-gap: 1rem;
+    }
+
+    .footer-socials-title {
+        font-size: 1.5rem;
+    }
+
+    .footer-socials button {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+    }
+}

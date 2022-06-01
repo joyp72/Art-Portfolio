@@ -25,7 +25,6 @@ leftName.onmouseout = unFadeLeftButtons;
 let offset = 0;
 let sidebarToggle = 0;
 let revealed = 0;
-
 window.addEventListener("scroll", function () {
     offset = this.window.scrollY * 0.01;
     // console.log(offset);
@@ -55,7 +54,7 @@ function reveal() {
 }
 
 function adjustPainting1() {
-    if (offset > 6 && offset < 10) {
+    if (offset > 6 && offset < 11) {
         let style = getComputedStyle(midPainting1);
         let cur = style.top;
         cur = cur.slice(0, 2);
@@ -94,19 +93,11 @@ function adjustSidebar() {
     if (sidebarToggle == 0) {
         sidebar.style.height = "100%"
         barButton.style.transform = "rotate(-90deg)"
-        if (visualViewport.width <= 450) {
-            sidebar.style.transform = "translate(-230px)";
-        } else if (visualViewport.width <= 540) {
-            sidebar.style.transform = "translate(-300px)";
-        } else if (visualViewport.width <= 912) {
-            sidebar.style.transform = "translate(-450px)";
-        } else if (visualViewport.width <= 1024) {
-            sidebar.style.transform = "translate(-270px)";
-        }
+        sidebar.style.right = "-1%";
         sidebarToggle = 1;
     } else {
         barButton.style.transform = "rotate(0deg)";
-        sidebar.style.transform = "translate(0px)";
+        sidebar.style.right = "-100%";
         setTimeout(() => {
             sidebar.style.height = "0";
         }, 150);
@@ -127,7 +118,9 @@ function unFadeLeftButtons() {
 function adjustHeader() {
     if (visualViewport.width < 760 && offset > 8) {
         topMid.style.opacity = "1";
-    } else if (offset > 11) {
+    } else if (visualViewport.width < 1020 && offset > 11) {
+        topMid.style.opacity = "1";
+    } else if (offset > 9) {
         topMid.style.opacity = "1";
     } else {
         topMid.style.opacity = "0";
@@ -137,7 +130,7 @@ function adjustHeader() {
 function scrollToFooter() {
     footer.scrollIntoView();
     barButton.style.transform = "rotate(0deg)"
-    sidebar.style.transform = "translate(0px)";
+    sidebar.style.right = "-100%";
     setTimeout(() => {
         sidebar.style.height = "0";
     }, 150);
