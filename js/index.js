@@ -14,6 +14,8 @@ let midPainting1 = document.getElementById("mid-painting-1");
 let midPainting2 = document.getElementById("mid-painting-2");
 let midPainting3 = document.getElementById("mid-painting-3");
 
+let midSB = document.getElementById("mid-scrollbox");
+
 let footer = document.getElementById("footer");
 
 leftIcon.onmouseover = fadeLeftButtons;
@@ -34,6 +36,14 @@ window.addEventListener("scroll", function () {
     adjustPainting2();
     adjustPainting3();
 });
+
+function moveImgLeft() {
+    midSB.scrollLeft += 600;
+}
+
+function moveImgRight() {
+    midSB.scrollLeft -= 600;
+}
 
 function reveal() {
     if (revealed == 0 && offset > 2) {

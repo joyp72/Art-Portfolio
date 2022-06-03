@@ -25,6 +25,7 @@
     -webkit-mask-image: linear-gradient(to top, black, transparent);
     mask-image: linear-gradient(to top, black, transparent);
     height: 100%;
+    margin-bottom: -1%;
 }
 
 .top-background-solid {
