@@ -38,11 +38,11 @@ window.addEventListener("scroll", function () {
 });
 
 function moveImgLeft() {
-    midSB.scrollLeft += 600;
+    midSB.scrollLeft += 250;
 }
 
 function moveImgRight() {
-    midSB.scrollLeft -= 600;
+    midSB.scrollLeft -= 250;
 }
 
 function reveal() {
