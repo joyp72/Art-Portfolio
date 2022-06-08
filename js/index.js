@@ -38,11 +38,11 @@ window.addEventListener("scroll", function () {
 });
 
 function moveImgLeft() {
-    midSB.scrollLeft += 250;
+    midSB.scrollLeft += 245;
 }
 
 function moveImgRight() {
-    midSB.scrollLeft -= 250;
+    midSB.scrollLeft -= 245;
 }
 
 function reveal() {
@@ -126,11 +126,15 @@ function unFadeLeftButtons() {
 }
 
 function adjustHeader() {
-    if (visualViewport.width < 760 && offset > 8) {
+    if (visualViewport.width <= 412 && offset > 8) {
         topMid.style.opacity = "1";
-    } else if (visualViewport.width < 1020 && offset > 11) {
+    } else if (visualViewport.width <= 768 && offset > 10) {
         topMid.style.opacity = "1";
-    } else if (offset > 9) {
+    } else if (visualViewport.width <= 820 && offset > 12) {
+        topMid.style.opacity = "1";
+    } else if (visualViewport.width <= 912 && offset > 14) {
+        topMid.style.opacity = "1";
+    } else if (visualViewport.width <= 1024 && offset > 14) {
         topMid.style.opacity = "1";
     } else {
         topMid.style.opacity = "0";

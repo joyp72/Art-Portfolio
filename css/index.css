@@ -13,11 +13,13 @@ body {
     background-color: rgb(49, 129, 126);
 }
 
-button {
-    transition: opacity 0.15s;
-}
+@media (hover : hover) {
+    button {
+        transition: opacity 0.15s;
+    }
 
-button:hover {
-    cursor: pointer;
-    opacity: 0.7;
+    button:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
 }
