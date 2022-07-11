@@ -39,6 +39,7 @@ window.addEventListener("scroll", function () {
 
 function moveImgLeft() {
     midSB.scrollLeft += 245;
+    midSB.style.opacity = "0";
 }
 
 function moveImgRight() {
