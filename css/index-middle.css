@@ -247,7 +247,7 @@
 
 .mid-scrollbox {
     display: flex;
-    overflow: hidden;
+    overflow: scroll;
     column-gap: 1rem;
     transition: transform 0.3s ease-out;
     scroll-behavior: smooth;
