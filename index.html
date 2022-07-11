@@ -59,6 +59,10 @@
             </div>
         </div>
 
+        <div id="overlay" class="overlay" onclick="oLShow(0)">
+            <img id="overlay-img" src="images/Paintings/IMG_2432-thumb.jpg" alt="">
+        </div>
+
         <div id="header" class="header">
             <div class="header-left">
                 <div>
@@ -148,15 +152,15 @@
                     <button><img src="images/left-arrow-icon.png" alt=""></button>
                 </div>
 
-                <div class="mid-scrollbox-content-ver">
+                <div onclick="oLShow(1)" class="mid-scrollbox-content-ver">
                     <img src="images/Paintings/IMG_2432-thumb.jpg" alt="">
                 </div>
 
-                <div class="mid-scrollbox-content-ver">
+                <div onclick="oLShow(2)" class="mid-scrollbox-content-ver">
                     <img src="images/Paintings/IMG_2423-thumb.jpg" alt="">
                 </div>
 
-                <div class="mid-scrollbox-content-hor">
+                <div onclick="oLShow(3)" class="mid-scrollbox-content-hor">
                     <img src="images/Paintings/IMG_2424-thumb.jpg" alt="">
                 </div>
 
@@ -165,22 +169,22 @@
                 </div>
             </div>
 
-            <div class="mid-sb-bars">
-                <div class="mid-sb-bars-left">
-                </div>
-                <div class="mid-sb-bars-right">
-                </div>
+            <!-- <div class="mid-sb-bars"> -->
+            <div class="mid-sb-bars-left">
+            </div>
+            <div class="mid-sb-bars-right">
+            </div>
+            <!-- </div> -->
+
+            <!-- <div class="mid-sb-btns"> -->
+            <div class="mid-sb-btnsl">
+                <button onclick="moveImgRight();"><img src="images/left-arrow-icon.png" alt=""></button>
             </div>
 
-            <div class="mid-sb-btns">
-                <div>
-                    <button onclick="moveImgRight();"><img src="images/left-arrow-icon.png" alt=""></button>
-                </div>
-
-                <div>
-                    <button onclick="moveImgLeft();"><img src="images/right-arrow-icon.png" alt=""></button>
-                </div>
+            <div class="mid-sb-btnsr">
+                <button onclick="moveImgLeft();"><img src="images/right-arrow-icon.png" alt=""></button>
             </div>
+            <!-- </div> -->
         </div>
 
         <div class="mid-painting-container">

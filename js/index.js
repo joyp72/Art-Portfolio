@@ -5,6 +5,9 @@ let leftName = document.getElementById("header-left-name-button");
 let barButton = document.getElementById("header-right-bar-button");
 let sidebar = document.getElementById("sidebar");
 
+let overlay = document.getElementById("overlay");
+var overlayImg = document.getElementById("overlay-img");
+
 let topBox2 = document.getElementById("top-box2");
 let miniBox1 = document.getElementById("minibox-1");
 let miniBox2 = document.getElementById("minibox-2");
@@ -15,6 +18,10 @@ let midPainting2 = document.getElementById("mid-painting-2");
 let midPainting3 = document.getElementById("mid-painting-3");
 
 let midSB = document.getElementById("mid-scrollbox");
+
+let paint1 = "../images/Paintings/IMG_2432-thumb.jpg";
+let paint2 = "../images/Paintings/IMG_2423-thumb.jpg";
+let paint3 = "../images/Paintings/IMG_2424-thumb.jpg";
 
 let footer = document.getElementById("footer");
 
@@ -43,6 +50,22 @@ function moveImgLeft() {
 
 function moveImgRight() {
     midSB.scrollLeft -= 245;
+}
+
+function oLShow(x) {
+    if (x == 0) {
+        overlay.style.display = "none";
+    } else if (x == 1) {
+        overlayImg.setAttribute("src", paint1);
+        overlay.style.display = "flex";
+    } else if (x == 2) {
+        console.log("2");
+        overlayImg.setAttribute("src", paint2);
+        overlay.style.display = "flex";
+    } else if (x == 3) {
+        overlayImg.setAttribute("src", paint3);
+        overlay.style.display = "flex";
+    }
 }
 
 function reveal() {
