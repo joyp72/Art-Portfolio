@@ -89,9 +89,9 @@
     position: fixed;
     display: none;
     top: 0;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
-    right: 0;
+    right: -1px;
     background-color: rgba(0, 0, 0, 0.95);
 }
 
