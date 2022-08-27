@@ -19,9 +19,9 @@ let midPainting3 = document.getElementById("mid-painting-3");
 
 let midSB = document.getElementById("mid-scrollbox");
 
-let paint1 = "../images/Paintings/IMG_2432-thumb.jpg";
-let paint2 = "../images/Paintings/IMG_2423-thumb.jpg";
-let paint3 = "../images/Paintings/IMG_2424-thumb.jpg";
+let paint1 = "images/Paintings/IMG_2432-thumb.jpg";
+let paint2 = "images/Paintings/IMG_2423-thumb.jpg";
+let paint3 = "images/Paintings/IMG_2424-thumb.jpg";
 
 let footer = document.getElementById("footer");
 
